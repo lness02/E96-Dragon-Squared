@@ -7,8 +7,15 @@ public class Enemy : MonoBehaviour
     [SerializeField] public float speed = 3f; 
     [SerializeField] private float attackDamage = 10f; 
     [SerializeField] private float attackSpeed = 1f;
+    public GameObject enemy;
     private float canAttack; 
     private Transform target;
+    public int maxHealth = 100;
+    private int currentHealth; 
+
+    void Start() {
+        currentHealth = maxHealth;
+    }
 
     private void FixedUpdate() {
         if (target != null) {
@@ -54,5 +61,24 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.tag == "Player") {
             target = null;
         }
+    }
+
+    public void TakeDamage(int damage) {
+        currentHealth -= damage;
+
+        if (currentHealth <= 0) {
+            Die(); 
+        }
+    }
+
+    void Die() {
+        Debug.Log("enemy died");
+
+        // animate
+
+        // disable the enemy
+        GetComponent<Collider2D>().enabled = false; 
+        this.enabled = false; 
+        enemy.SetActive(false);
     }
 }
