@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Base
+    uniqueID: 2554288789
+    locked: 0
+  - name: Grass
+    uniqueID: 970035395
+    locked: 0
+  - name: Shrubbery
+    uniqueID: 4076942133
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 164157511
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 3570668405
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 2231503225
+    locked: 0
