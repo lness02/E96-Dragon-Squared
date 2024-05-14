@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/PauseMenu.unity
-    guid: 1bf5d2338cf5f8346812279af99ad75b
+    path: Assets/Scenes/DemoStart.unity
+    guid: 17379e0f5a8ec1643a343a0a68342897
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 4c16f5b56a5c74b4b8659666458054eb
+    path: Assets/Scenes/Starting Zone.unity
+    guid: 9bb8ba65dd405480b9fad9222c88f31a
+  - enabled: 1
+    path: Assets/Scenes/PlayerMovement.unity
+    guid: a4c44975c31279f48b78df89a79ea637
   m_configObjects: {}
