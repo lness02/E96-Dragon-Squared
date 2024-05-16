@@ -47,11 +47,17 @@ TagManager:
   - name: Grass
     uniqueID: 970035395
     locked: 0
+  - name: Path
+    uniqueID: 2030522901
+    locked: 0
   - name: Shrubbery
     uniqueID: 4076942133
     locked: 0
-  - name: Characters
+  - name: More
     uniqueID: 164157511
+    locked: 0
+  - name: More Objects
+    uniqueID: 3495392317
     locked: 0
   - name: New Layer 5
     uniqueID: 3570668405
@@ -68,6 +74,9 @@ TagManager:
   - name: New Layer 9
     uniqueID: 2455311709
     locked: 0
-  - name: New Layer 10
+  - name: Character
     uniqueID: 1345780751
+    locked: 0
+  - name: Tree Tips
+    uniqueID: 1856412447
     locked: 0
