@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public LayerMask enemyLayers;
     [SerializeField] public float attackRange = 0.5f;
-    [SerializeField] public int attackDamage = 40; 
+    [SerializeField] public int attackDamage = 20; 
     [SerializeField] public float attackRate = 2f;
     float nextAttackTime = 0f; 
 
