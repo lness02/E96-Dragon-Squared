@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 165f9b74da9d04b32bf8247d6986a8a2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10890e5d8f9234d04afbd5feb850a22c
+      internalID: 966310362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb2142b47fb74e899e63c7ff35cc425
+      internalID: 1965566421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5b46cca68564f3fb6358ceea42bd89
+      internalID: 1912358827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dccba77aa8d44c7a64d88923aec7a6
+      internalID: 1060349590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3afc6a69e1344094be767e3238425e7
+      internalID: -1469722119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0093c51544db48f792e00fbc2c606a6
+      internalID: 1101026224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933a6b2c989f54f3198cf6f7e4f59721
+      internalID: -1317552313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e177c95a876b846e5bc239af4a8204f6
+      internalID: 485935123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877ab19d7a19548568d03173e654d4ec
+      internalID: 1448841439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a65b6b15f0945079b02d2375d64965
+      internalID: -1645230222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dde1323383244ce8468878dfe6a678
+      internalID: 1528957798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_11
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7acbd5ecdf74197bede914fdae432b
+      internalID: -1065342589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7331bad9f3ba4d89be061668718d1a9
+      internalID: 2131384371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_13
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b24749e3c6464eab9592de7a7e8a2db
+      internalID: 1099237792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_14
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7969fee6ab3b46f7bda675096e0fb7f
+      internalID: -1088867202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dragon_FIREBREATH_green copy 3_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 96.875
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409f3cec19d2b4b09a6850ad89b76188
+      internalID: -48347856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      dragon_FIREBREATH_green copy 3_0: 966310362
+      dragon_FIREBREATH_green copy 3_1: 1965566421
+      dragon_FIREBREATH_green copy 3_10: 1528957798
+      dragon_FIREBREATH_green copy 3_11: -1065342589
+      dragon_FIREBREATH_green copy 3_12: 2131384371
+      dragon_FIREBREATH_green copy 3_13: 1099237792
+      dragon_FIREBREATH_green copy 3_14: -1088867202
+      dragon_FIREBREATH_green copy 3_15: -48347856
+      dragon_FIREBREATH_green copy 3_2: 1912358827
+      dragon_FIREBREATH_green copy 3_3: 1060349590
+      dragon_FIREBREATH_green copy 3_4: -1469722119
+      dragon_FIREBREATH_green copy 3_5: 1101026224
+      dragon_FIREBREATH_green copy 3_6: -1317552313
+      dragon_FIREBREATH_green copy 3_7: 485935123
+      dragon_FIREBREATH_green copy 3_8: 1448841439
+      dragon_FIREBREATH_green copy 3_9: -1645230222
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
