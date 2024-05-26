@@ -54,8 +54,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnPunch() {
         animator.SetBool("isPunching", true);    
-        //animator.SetBool("isPunching", false);    
     }
 
+    void EndPunch() {
+        animator.SetBool("isPunching", false);    
+
+    }
 
 }
