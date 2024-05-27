@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StaticEnemy
   - Audio
+  - TreeEnemy
   layers:
   - Default
   - TransparentFX

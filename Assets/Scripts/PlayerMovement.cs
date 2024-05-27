@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>(); 
+        animator = GetComponent<Animator>();
     }
 
     void Update() {
@@ -50,4 +51,14 @@ public class PlayerMovement : MonoBehaviour
     private void Move() {
         rb.velocity = movement * speed; 
     }
+
+    void OnPunch() {
+        animator.SetBool("isPunching", true);    
+    }
+
+    void EndPunch() {
+        animator.SetBool("isPunching", false);    
+
+    }
+
 }
