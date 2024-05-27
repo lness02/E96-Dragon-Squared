@@ -9,10 +9,6 @@ public class Quest
     public int currentAmt { get; set; }
     public int requiredAmt { get; set; }
 
-    // public virtual void Init() {
-    //     // default init
-    // }
-
     public Quest(string title, string description, bool completed, int currentAmt, int requiredAmt) {
         this.title = title; 
         this.description = description;

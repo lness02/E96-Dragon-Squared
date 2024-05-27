@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro; 
+using UnityEngine.SceneManagement;
 
-public class QuestController : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     public List<Quest> quests = new List<Quest>();
+    public List<Quest> questsToRemove = new List<Quest>();
     public int questsCompleted = 0; 
-    [SerializeField] public int totalQuests = 2; 
-    public GameObject questPrefab; // Prefab of the task UI element
+    [SerializeField] public int totalQuests = 5; 
+    public GameObject questPrefab;
     public Transform questListParent;
+    public TextMeshProUGUI questNum; 
     private float verticalSpacing = 75f; 
-    // Start is called before the first frame update
-    void Awake()
+
+    void Start()
     {
         // populate quest list with quests
         AddQuest("Punch a tree", "Punch a tree to rebuild homes.", false, 0, 1);
@@ -20,42 +23,79 @@ public class QuestController : MonoBehaviour
         AddQuest("Clean the Streets (>:3)", "There's this sus lord. Do what you do best and murder!", false, 0, 1);
         AddQuest("Clean the Streets", "Clean Up Debris.", false, 0, 1);
         AddQuest("No Witnesses. ", "Someone knows that you destroyed the town. Take him down.", false, 0, 1);
+
+        // listen for Enemy deaths
+        Enemy[] enemies = FindObjectsOfType<Enemy>();
+        foreach (Enemy e in enemies) {
+            e.onDeath.AddListener(OnEnemyDeath);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // check for completion
         foreach (Quest q in quests) {
             if (q.currentAmt >= q.requiredAmt) {
                 CompleteQuest(q); 
             }
         }
 
-        // listen for events that indicate a quest was completed
+        // remove ze quest
+        foreach (Quest q in questsToRemove) {
+            quests.Remove(q); 
+        }
+
+        // update ze UI
+        if (questsToRemove.Count > 0) {
+            // remove from UI
+            UpdateUI(); 
+            questsToRemove.Clear();
+        }
+
+        // if all quests are completed, game over
+        if (questsCompleted == totalQuests) {
+            GameOver(); 
+        }
+
+    }
+
+    public void GameOver() {
+        SceneManager.LoadScene("GameOver");  
     }
 
     public void AddQuest(string title, string description, bool completed, int currentAmt, int requiredAmt) {
         Quest q = new Quest(title, description, completed, currentAmt, requiredAmt);
         quests.Add(q); 
-        // totalQuests++; 
-        Debug.Log(q); 
         // add to UI
         UpdateUI(); 
     }
 
-    // // have event listeners somehow?
     public void UpdateQuest(Quest q, int update) {
         q.currentAmt = update; 
+    }
+
+    // event handler for enemy death (used for task triggers)
+    private void OnEnemyDeath(GameObject enemy)
+    {
+        Debug.Log(enemy); 
+        if (enemy.CompareTag("TreeEnemy")) {
+            foreach (Quest q in quests) {
+                if (q.title == "Punch a tree") {
+                    UpdateQuest(q, 1);
+                }
+            }
+        }
     }
     
     public void CompleteQuest(Quest q) {
         q.Complete(); 
         questsCompleted++; 
 
-        // remove from UI
-        UpdateUI(); 
+        // remove from quest list
+        questsToRemove.Add(q); 
     }
 
+    // update task list
     private void UpdateUI()
     {
         // clear existing
@@ -65,15 +105,14 @@ public class QuestController : MonoBehaviour
         }
 
         // UI elements
+        questNum.text = questsCompleted.ToString(); 
         float yPos = 140f;
         foreach (Quest q in quests)
         {
             GameObject questUI = Instantiate(questPrefab, questListParent);
-            // Set the position of the instantiated prefab
             RectTransform rectTransform = questUI.GetComponent<RectTransform>();
             rectTransform.anchoredPosition = new Vector2(0f, yPos);
 
-            // Update the current Y position for the next prefab
             // yPos -= (rectTransform.sizeDelta.y + verticalSpacing);
             yPos -= (verticalSpacing);
 
@@ -82,7 +121,6 @@ public class QuestController : MonoBehaviour
             if (textComponents.Length > 0)
             {
                 textComponents[0].text = q.title;
-                Debug.Log(q.title); 
             }
 
             if (textComponents.Length > 1)
