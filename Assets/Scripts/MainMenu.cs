@@ -68,7 +68,6 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
     public void OnCredits()
     {
         PlayPageFlip();
