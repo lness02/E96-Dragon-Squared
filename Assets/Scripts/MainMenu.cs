@@ -8,10 +8,12 @@ public class MainMenu : MonoBehaviour
 {
    public static bool isPaused = false;
    public static bool isOptionsOpen = false;
+   public static bool isCreditsOpen = false;
    public static bool isHelpOpen = false;
 
    public GameObject PauseMenu;
    public GameObject OptionsMenu;
+   public GameObject CreditsMenu;
 
    AudioManager audioManager;
 
@@ -64,6 +66,28 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    public void OnCredits()
+    {
+        PlayPageFlip();
+        Credits();
+        
+    }
+
+    public void Credits()
+    {
+        if (isCreditsOpen == true)
+        {
+            CreditsMenu.SetActive(false);
+            isCreditsOpen = false;
+
+        }
+        else
+        {
+            CreditsMenu.SetActive(true);
+            isCreditsOpen = true;
+        }
+    }
+    
 // public void OnHelp()
 //     {
 //         Help();
