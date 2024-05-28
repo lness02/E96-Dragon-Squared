@@ -8,10 +8,14 @@ public class MainMenu : MonoBehaviour
 {
    public static bool isPaused = false;
    public static bool isOptionsOpen = false;
+   public static bool isCreditsOpen = false;
+   public static bool isTaskOpen = false;
    public static bool isHelpOpen = false;
 
    public GameObject PauseMenu;
    public GameObject OptionsMenu;
+   public GameObject CreditsMenu;
+   public GameObject TaskMenu;
 
    AudioManager audioManager;
 
@@ -64,30 +68,52 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-// public void OnHelp()
-//     {
-//         Help();
-//     }
+    public void OnCredits()
+    {
+        PlayPageFlip();
+        Credits();
+        
+    }
 
-//     public void Help()
-//     {
-//         if (isHelpOpen == true && isPaused == false)
-//         {
-//             HelpMenu.SetActive(false);
-//             Time.timeScale = 1f;
-//             isHelpOpen = false;
+    public void Credits()
+    {
+        if (isCreditsOpen == true)
+        {
+            CreditsMenu.SetActive(false);
+            isCreditsOpen = false;
 
-//         }
-//         else if(isPaused == false)
-//         {
-//             HelpMenu.SetActive(true);
-//             Time.timeScale = 0f;
-//             isHelpOpen = true;
-//         }
-//     }
+        }
+        else
+        {
+            CreditsMenu.SetActive(true);
+            isCreditsOpen = true;
+        }
+    }
+    public void OnTask()
+    {
+        Task();
+    }
+
+    public void Task()
+    {
+        if (isTaskOpen == true && isPaused == false)
+        {
+            TaskMenu.SetActive(false);
+            Time.timeScale = 1f;
+            isTaskOpen = false;
+
+        }
+        else if(isPaused == false)
+        {
+            TaskMenu.SetActive(true);
+            Time.timeScale = 0f;
+            isTaskOpen = true;
+        }
+    }
 
    public void NavButton(string sceneName)
    {
+        Debug.Log(sceneName);
         SceneManager.LoadScene(sceneName);
 
    }
