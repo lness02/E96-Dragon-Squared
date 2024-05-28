@@ -12,13 +12,14 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] public int attackDamage = 20; 
     [SerializeField] public float attackRate = 2f;
     float nextAttackTime = 0f; 
+    private bool isPunching = false;
 
-    void OnFire() {
-        if (Time.time >= nextAttackTime) {
-            Attack();
-            nextAttackTime = Time.time + 1f / attackRate;
-        }
-    }
+    // void OnFire() {
+    //     if (Time.time >= nextAttackTime) {
+    //         Attack();
+    //         nextAttackTime = Time.time + 1f / attackRate;
+    //     }
+    // }
 
     void Attack() {
         animator.SetTrigger("Attack");
@@ -31,5 +32,17 @@ public class PlayerAttack : MonoBehaviour
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
 
+    }
+
+    void OnPunch() {
+        if (Time.time >= nextAttackTime) {
+            Attack();
+            nextAttackTime = Time.time + 1f / attackRate;
+            // animator.SetBool("isPunching", true);
+        }
+        
+        // if (Input.GetKeyDown(KeyCode.Space) && !isPunching) {
+        //     animator.SetBool("isPunching", true);
+        // } 
     }
 }
