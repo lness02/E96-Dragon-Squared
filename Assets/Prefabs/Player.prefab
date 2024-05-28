@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 3283816100917951525}
   - component: {fileID: 7146474150890243461}
   - component: {fileID: 6257053916976088713}
-  - component: {fileID: 8954285732687583878}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -111,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6b17b9bb5613d43bbb8b10cb2a0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingPosition: {fileID: 11400000, guid: ba8cfee1d61d14b7f86f35eebc02e7fe, type: 2}
   speed: 5
   rb: {fileID: 698061380938390272}
   animator: {fileID: 2409737400018576826}
@@ -295,15 +295,3 @@ MonoBehaviour:
   attackRange: 0.5
   attackDamage: 40
   attackRate: 2
---- !u!114 &8954285732687583878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7360680013773910660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d27116757dc541d48e4ac367d638607, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

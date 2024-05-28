@@ -5,15 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public VectorValues startingPosition;
     [SerializeField] public float speed = 5f; 
     public Rigidbody2D rb;
     public Animator animator; 
     private Vector2 movement; 
     private Vector2 direction; 
+    
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>(); 
         animator = GetComponent<Animator>();
+        transform.position = startingPosition.initialValue;
     }
 
     void Update() {
