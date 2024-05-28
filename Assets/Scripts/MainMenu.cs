@@ -8,20 +8,14 @@ public class MainMenu : MonoBehaviour
 {
    public static bool isPaused = false;
    public static bool isOptionsOpen = false;
-<<<<<<< Updated upstream
    public static bool isCreditsOpen = false;
+   public static bool isTaskOpen = false;
    public static bool isHelpOpen = false;
 
    public GameObject PauseMenu;
    public GameObject OptionsMenu;
    public GameObject CreditsMenu;
-=======
-   public static bool isTaskOpen = false;
-
-   public GameObject PauseMenu;
-   public GameObject OptionsMenu;
    public GameObject TaskMenu;
->>>>>>> Stashed changes
 
    AudioManager audioManager;
 
@@ -96,17 +90,10 @@ public class MainMenu : MonoBehaviour
             isCreditsOpen = true;
         }
     }
-    
-// public void OnHelp()
-//     {
-//         Help();
-//     }
-=======
-public void OnTask()
+    public void OnTask()
     {
         Task();
     }
->>>>>>> Stashed changes
 
     public void Task()
     {
