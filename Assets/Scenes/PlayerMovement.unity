@@ -475,7 +475,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03319502, y: -0.06365943}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -486,7 +486,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.96, y: 5.56}
+  m_Size: {x: 2.1884828, y: 2.0327067}
   m_EdgeRadius: 0
 --- !u!1 &217656307
 GameObject:
@@ -3932,8 +3932,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05, y: -0.1}
-  m_Size: {x: 0.7, y: 0.7}
+  m_Offset: {x: -0.06, y: 0}
+  m_Size: {x: 0.2, y: 0.2}
   m_Direction: 0
 --- !u!50 &2130938753
 Rigidbody2D:
@@ -3961,7 +3961,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!212 &2130938754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4429,6 +4429,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4676739302189836208, guid: 60334100eb9bb72448a2380dcd5b3537, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181748267967890106, guid: 60334100eb9bb72448a2380dcd5b3537, type: 3}
+      propertyPath: m_Size.x
+      value: 0.97498083
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181748267967890106, guid: 60334100eb9bb72448a2380dcd5b3537, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2952027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181748267967890106, guid: 60334100eb9bb72448a2380dcd5b3537, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181748267967890106, guid: 60334100eb9bb72448a2380dcd5b3537, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5550187406494281235, guid: 60334100eb9bb72448a2380dcd5b3537, type: 3}
