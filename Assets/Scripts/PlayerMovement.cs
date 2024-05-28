@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float speed = 5f; 
     public Rigidbody2D rb;
     public Animator animator; 
+    private bool isPunching = false;
     private Vector2 movement; 
     private Vector2 direction; 
 
@@ -53,12 +54,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void OnPunch() {
-        animator.SetBool("isPunching", true);    
-    }
-
-    void EndPunch() {
-        animator.SetBool("isPunching", false);    
-
+        if (Input.GetKeyDown(KeyCode.Space) && !isPunching) {
+            animator.SetBool("isPunching", true);
+            animator.SetBool("isPunching", false);
+        } 
     }
 
 }
