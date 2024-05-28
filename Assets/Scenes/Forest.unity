@@ -31240,6 +31240,14 @@ PrefabInstance:
       propertyPath: sceneName
       value: Village
       objectReference: {fileID: 0}
+    - target: {fileID: 6293180799950702607, guid: 29123877d8b124288b58795e31db0626, type: 3}
+      propertyPath: playerPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293180799950702607, guid: 29123877d8b124288b58795e31db0626, type: 3}
+      propertyPath: playerPosition.y
+      value: -11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
