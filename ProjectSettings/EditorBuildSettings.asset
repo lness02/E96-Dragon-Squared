@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Forest.unity
     guid: cd4420584d15d453f96318c722ac6204
   - enabled: 1
-    path: Assets/Scenes/Forest Test.unity
-    guid: 6fb9d80e2f4e64442b3da4001fc480d6
-  - enabled: 1
     path: Assets/Scenes/Village.unity
     guid: c8f8be9d2204341798b0d6243bb4aa6d
   - enabled: 1
