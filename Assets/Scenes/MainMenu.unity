@@ -818,7 +818,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: PauseMenu
+          m_StringArgument: PlayerMovement
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &789223603
@@ -874,6 +874,7 @@ MonoBehaviour:
   PauseMenu: {fileID: 0}
   OptionsMenu: {fileID: 0}
   CreditsMenu: {fileID: 0}
+  TaskMenu: {fileID: 0}
 --- !u!1 &821040256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1315,7 @@ MonoBehaviour:
   PauseMenu: {fileID: 0}
   OptionsMenu: {fileID: 0}
   CreditsMenu: {fileID: 0}
+  TaskMenu: {fileID: 0}
 --- !u!1 &1211836060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +2349,7 @@ MonoBehaviour:
   PauseMenu: {fileID: 0}
   OptionsMenu: {fileID: 600765985}
   CreditsMenu: {fileID: 0}
+  TaskMenu: {fileID: 0}
 --- !u!1 &1823213141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,6 +2405,7 @@ MonoBehaviour:
   PauseMenu: {fileID: 0}
   OptionsMenu: {fileID: 600765985}
   CreditsMenu: {fileID: 536231670}
+  TaskMenu: {fileID: 0}
 --- !u!114 &1823213144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2789,6 +2793,7 @@ MonoBehaviour:
   PauseMenu: {fileID: 0}
   OptionsMenu: {fileID: 0}
   CreditsMenu: {fileID: 536231670}
+  TaskMenu: {fileID: 0}
 --- !u!1 &1867610960
 GameObject:
   m_ObjectHideFlags: 0
