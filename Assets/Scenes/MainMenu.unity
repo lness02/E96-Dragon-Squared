@@ -738,6 +738,7 @@ GameObject:
   - component: {fileID: 789223603}
   - component: {fileID: 789223602}
   - component: {fileID: 789223605}
+  - component: {fileID: 789223606}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -818,7 +819,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: PlayerMovement
+          m_StringArgument: StartingZone
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 789223606}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SetPlayerStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &789223603
@@ -875,6 +888,21 @@ MonoBehaviour:
   OptionsMenu: {fileID: 0}
   CreditsMenu: {fileID: 0}
   TaskMenu: {fileID: 0}
+--- !u!114 &789223606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789223600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b63fa66eb660459a86dc2ceda4d1746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  playerPosition: {x: 2, y: -8}
+  playerStorage: {fileID: 11400000, guid: ba8cfee1d61d14b7f86f35eebc02e7fe, type: 2}
 --- !u!1 &821040256
 GameObject:
   m_ObjectHideFlags: 0

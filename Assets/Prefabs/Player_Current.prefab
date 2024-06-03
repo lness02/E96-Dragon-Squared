@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6845039074828439643}
   - component: {fileID: 821509608453245095}
   - component: {fileID: 5334516859057324099}
-  - component: {fileID: 6853785295494224413}
+  - component: {fileID: 1020225622388588271}
   m_Layer: 6
   m_Name: Player_Current
   m_TagString: Player
@@ -219,8 +219,8 @@ MonoBehaviour:
   attackRange: 0.5
   attackDamage: 20
   attackRate: 2
---- !u!61 &6853785295494224413
-BoxCollider2D:
+--- !u!70 &1020225622388588271
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -251,19 +251,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03319502, y: -0.06365943}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 3.4375, y: 2.375}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.1884828, y: 2.0327067}
-  m_EdgeRadius: 0
+  m_Offset: {x: 1.71875, y: 1.1875}
+  m_Size: {x: 3.4375, y: 2.375}
+  m_Direction: 0
 --- !u!1 &6498153651342914703
 GameObject:
   m_ObjectHideFlags: 0
