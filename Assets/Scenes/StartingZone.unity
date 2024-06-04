@@ -25192,6 +25192,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 656769431}
     - target: {fileID: 8391649936221984340, guid: 4d2ee7c3bf0e44a458f2f4bc60d29366, type: 3}
+      propertyPath: totalQuests
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391649936221984340, guid: 4d2ee7c3bf0e44a458f2f4bc60d29366, type: 3}
       propertyPath: questListParent
       value: 
       objectReference: {fileID: 328178045}

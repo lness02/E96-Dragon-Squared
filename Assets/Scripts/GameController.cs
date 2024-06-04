@@ -9,24 +9,22 @@ public class GameController : MonoBehaviour
     public List<Quest> quests = new List<Quest>();
     public List<Quest> questsToRemove = new List<Quest>();
     public int questsCompleted = 0; 
-    [SerializeField] public int totalQuests = 5; 
+    public int totalQuests = 3; 
     public GameObject questPrefab;
     public Transform questListParent;
     public TextMeshProUGUI questNum; 
-    private float verticalSpacing = 75f; 
+    private float verticalSpacing = 50f; 
 
     void Start()
     {
         // populate quest list with quests
-        AddQuest("Punch a tree", "Punch a tree to rebuild homes.", false, 0, 1);
-        AddQuest("We Didn’t Start the Fire!", "Break down the village water dam to put out the town.", false, 0, 1);
-        AddQuest("Clean the Streets (>:3)", "There's this sus lord. Do what you do best and murder!", false, 0, 1);
-        AddQuest("Clean the Streets", "Clean Up Debris.", false, 0, 1);
-        AddQuest("No Witnesses. ", "Someone knows that you destroyed the town. Take him down.", false, 0, 1);
+        AddQuest("Punch a tree", "Punch a green tree stump to rebuild homes.", false, 0, 1);
+        AddQuest("Clean the Streets (>:3)", "Murder the sus (fox) lord.", false, 0, 1);
+        AddQuest("No Witnesses.", "Take down a raccoon who knows you destroyed the town.", false, 0, 1);
 
         // listen for Enemy deaths
         Enemy[] enemies = FindObjectsOfType<Enemy>();
-        foreach (Enemy e in enemies) {
+        foreach (Enemy e in enemies) { 
             e.onDeath.AddListener(OnEnemyDeath);
         }
     }
@@ -85,6 +83,21 @@ public class GameController : MonoBehaviour
                 }
             }
         }
+        if (enemy.CompareTag("SusLord")) {
+            foreach (Quest q in quests) {
+                if (q.title == "Clean the Streets (>:3)") {
+                    UpdateQuest(q, 1);
+                }
+            }
+        }
+        if (enemy.CompareTag("RaccoonWitness")) {
+            foreach (Quest q in quests) {
+                if (q.title == "No Witnesses.") {
+                    UpdateQuest(q, 1);
+                }
+            }
+        }
+        
     }
     
     public void CompleteQuest(Quest q) {

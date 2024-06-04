@@ -7,6 +7,10 @@ TagManager:
   - StaticEnemy
   - Audio
   - TreeEnemy
+  - SusLord
+  - Debris
+  - Witness
+  - RaccoonWitness
   layers:
   - Default
   - TransparentFX
