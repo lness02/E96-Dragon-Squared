@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     public GameObject questPrefab;
     public Transform questListParent;
     public TextMeshProUGUI questNum; 
-    private float verticalSpacing = 50f; 
+    private float verticalSpacing = 80f; 
 
     void Start()
     {

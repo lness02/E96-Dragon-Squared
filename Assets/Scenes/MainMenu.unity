@@ -190,6 +190,9 @@ MonoBehaviour:
     Forest
     Tileset: https://pixivan.itch.io/top-down-forest-tileset
 
+    Animal Sprites:
+    https://pixelfight.itch.io/birdcat
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 651380f7149a82949a2a01c6ad192265, type: 2}
